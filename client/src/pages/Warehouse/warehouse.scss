@@ -1,0 +1,103 @@
+.titleProcess {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fc4683;
+  font-size: 30px;
+  font-weight: bold;
+}
+.table_category {
+  background-color: #fff;
+  margin: 2rem auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: 1000px;
+  border-radius: 8px;
+  padding-bottom: 15px;
+}
+.header {
+  //   border-radius: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(103, 102, 103, 0.197);
+  margin-bottom: 8px;
+  margin-left: 5px;
+  &__title {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    color: #313131;
+    padding: 15px 5px;
+    border-radius: 8px;
+    transition: all 0.2s linear;
+    margin: 10px 15px;
+    &:hover {
+      background-color: rgba(#e952a5, 0.1);
+      color: #fc4683;
+    }
+  }
+}
+
+.content {
+  cursor: pointer;
+  font-family: "Poppins";
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    color: #313131;
+    padding: 15px 5px;
+    border-radius: 8px;
+    transition: all 0.2s linear;
+    margin-bottom: 7px;
+    margin: 5px 20px;
+    &:hover {
+      background-color: #f6f6f6;
+      color: #fc4683;
+    }
+    &.isSP {
+      color: #2e9df3;
+      font-weight: 500;
+    }
+    &.valueSP {
+      color: #34d26e;
+    }
+    &.nameSP {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 400;
+    }
+    &.-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.edit {
+        margin-right: 10px;
+        color: #2e9df3;
+        &:hover {
+          background-color: rgba(#4ab1ff, 0.1);
+        }
+      }
+      &.delete {
+        margin-left: -10px;
+        color: #f15162;
+        &:hover {
+          background-color: rgba(#ff6271, 0.1);
+        }
+      }
+    }
+  }
+}

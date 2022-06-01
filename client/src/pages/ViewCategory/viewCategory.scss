@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lora&family==Quicksand=Montserrat:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fc4683;
+  font-size: 30px;
+  font-weight: bold;
+}
+.products {
+  margin: 40px 50px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
+  gap: 50px 30px;
+  flex-wrap: wrap;
+}
+.product {
+  width: 30rem;
+  height: 52rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+  &-image {
+    width: 100%;
+  }
+  &-content {
+    margin-top: 6px;
+    padding: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 13px;
+        color: #2e9df3;
+        i {
+          margin-right: 4px;
+        }
+      }
+    }
+    &__body {
+      margin-top: 8px;
+    }
+    &__footer {
+      font-family: "Poppins";
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // padding: 2px 5px;
+      .price {
+        color: #fc4683;
+        text-align: center;
+        padding: 0 3px;
+        &:hover {
+          color: #3ff892;
+          transition: all ease-out 0.25s;
+        }
+      }
+      .buy {
+        background-color: #fc4683;
+        margin-right: 5px;
+        width: 100px;
+        height: 40px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        &:hover {
+          background-color: #fc0b5b;
+          transition: all ease-out 0.25s;
+        }
+      }
+    }
+  }
+}
